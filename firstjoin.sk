@@ -11,6 +11,13 @@ on first join:
 
 command /warp:
   trigger:
-    set {_gui} to chest inventory with 4 rows named "&a&lWarps"
+    set {_gui} to chest inventory with 4 rows named "&lWarps"
     set slot 4 of {_gui} to book named "&lWarps"
-    set slot 8 of {_gui to barrier named "&4&lBack"
+    set slot 8 of {_gui} to barrier named "&4&lBack"
+    set slot 20 of {_gui} to barrier named "&lWarp1"
+    set slot 22 of {_gui} to barrier named "&lwarp2"
+    set slot 24 of {_gui} to barrier named "&lWarp3"
+
+
+on inventory click:
+  if inventory 
