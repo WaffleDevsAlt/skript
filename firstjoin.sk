@@ -1,0 +1,5 @@
+on first join:
+  give player stone
+  give player oak log
+  give player diamond
+  send "Welcome to Tavern SMP!" to player
