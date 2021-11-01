@@ -1,5 +1,16 @@
+# Give starter items and show welcome message
+
 on first join:
   give player stone
   give player oak log
   give player diamond
   send "Welcome to Tavern SMP!" to player
+
+
+#Warp menu
+
+command /warp:
+  trigger:
+    set {_gui} to chest inventory with 4 rows named "&a&lWarps"
+    set slot 4 of {_gui} to book named "&lWarps"
+    set slot 8 of {_gui to barrier named "&4&lBack"
