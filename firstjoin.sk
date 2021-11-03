@@ -1,23 +1,6 @@
-# Give starter items and show welcome message
+#Rules
 
-on first join:
-  give player stone
-  give player oak log
-  give player diamond
-  send "Welcome to Tavern SMP!" to player
-
-
-#Warp menu
-
-command /warp:
+command /rules:
+  description: Shows the servers rules
   trigger:
-    set {_gui} to chest inventory with 4 rows named "&lWarps"
-    set slot 4 of {_gui} to book named "&lWarps"
-    set slot 8 of {_gui} to barrier named "&4&lBack"
-    set slot 20 of {_gui} to barrier named "&lWarp1"
-    set slot 22 of {_gui} to barrier named "&lwarp2"
-    set slot 24 of {_gui} to barrier named "&lWarp3"
-
-
-on inventory click:
-  if inventory 
+    send "&bRules&7:%nl%1. RULE 1%nl%2. RULE 2%nl%3. RULE 3" to player
