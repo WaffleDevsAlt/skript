@@ -4,3 +4,4 @@ command /rules:
   description: Shows the servers rules
   trigger:
     send "&bRules&7:%nl%1. RULE 1%nl%2. RULE 2%nl%3. RULE 3" to player
+
