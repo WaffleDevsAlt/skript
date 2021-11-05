@@ -1,0 +1,7 @@
+#Rules
+
+command /rules:
+  description: Shows the servers rules
+  trigger:
+    send "&bRules&7:%nl%1. No hate speach (homophobia, racism, transphobia, etc)%nl%2. No swearing/slurs%nl%3. No hacking or exploiting%nl%4. Staff have final say" to player
+
